@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR-CODE</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>GERADOR DE QR-CODE</h1>
+    <div id="gerador">
+        <label for="conteudoQR">
+            <h2>Digite seu texto ou URL aqui (max 500 caracteres):</h2>
+        </label>
+        <textarea id="conteudoQR" maxlength="500" rows="5"></textarea>
+        <button id="gerarQR">Gerar QR CODE</button>
+    </div>
+
+    <div id="configQRCode">
+        <label for="errorCollection">
+            <h2>Recuperação de dados em caso de dano:</h2>
+        </label>
+        <select id="errorCollection">
+            <option value="L">7% (Default)</option>
+            <option value="M">15%</option>
+            <option value="Q">25%</option>
+            <option value="H">30%</option>
+        </select>
+    </div>
+
+    <img id="QRImage">
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

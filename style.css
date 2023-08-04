@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1,
+label,
+h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+body {
+    background: linear-gradient(purple, blueviolet);
+    min-height: 100vh;
+    max-width: 100vw;
+    text-align: center;
+}
+
+
+#gerador {
+    display: flex;
+    margin: 30px auto;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+
+#gerador textarea {
+    border-radius: 1rem;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#gerador button {
+    width: 50%;
+    font-size: 20px;
+    border-radius: 2rem;
+    font-weight: bold;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+
+#configQrCode {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    max-width: 150px;
+    width: 40%;
+    height: 2rem;
+    font-size: 15px;
+    background: #ddd;
+}
+
+img {
+    margin: 2rem;
+    border-radius: 4rem;
+}
+
+@media (min-width:1080px) {
+    select {
+        max-width: 10%;
+        width: 10%;
+        height: 2rem;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #gerador {
+        width: 50%;
+    }
+}
